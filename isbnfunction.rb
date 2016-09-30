@@ -3,7 +3,7 @@ def isbn(number)
 		"Valid"
 	elsif number.length <= 9
 		"Invalid. Try again."
-	elsif number.length >= 13
+	elsif number.length >= 14
 		"Invalid. Try again."
 	end
 
