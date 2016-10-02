@@ -6,5 +6,9 @@ def isbn(number)
 	elsif number.length >= 14
 		"Invalid. Try again."
 	end
+end	
 
-end		
+def number_only(number)
+	number = number.gsub(/[^0-9X]/i, "")
+	array = number
+end	
