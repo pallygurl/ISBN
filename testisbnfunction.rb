@@ -34,4 +34,8 @@ class TestIsbnFunction <Minitest::Test
 		assert_equal([0,3,2,1,1,4,6,5,3,0], string_split(number))
 	end	
 
+	def test_for_10_digit_checksum_equals_x
+		number = "877195869x"
+		assert_equal([8,7,7,1,9,5,8,6,9,10], string_split(number))
+	end	
 end	

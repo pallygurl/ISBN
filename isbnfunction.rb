@@ -15,5 +15,9 @@ end
 
 def string_split(number)
 	array = number.split(//,)	 
+	if array[9] == "x" 
+	   array[9] = "10"
+	end    		
 	array = array.map(&:to_i) 
+		
 end
