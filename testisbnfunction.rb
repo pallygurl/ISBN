@@ -29,7 +29,9 @@ class TestIsbnFunction <Minitest::Test
 		assert_equal("0321146530", number_only(number))	
 	end	
 
-	
+	def test_for_string_to_integer
+		number = "0321146530"
+		assert_equal([0,3,2,1,1,4,6,5,3,0], string_split(number))
+	end	
 
-	
 end	

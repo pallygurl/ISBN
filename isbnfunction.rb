@@ -3,12 +3,17 @@ def isbn(number)
 		"Valid"
 	elsif number.length <= 9
 		"Invalid. Try again."
-	elsif number.length >= 14
+	elsif number.length >= 13
 		"Invalid. Try again."
 	end
+
 end	
 
 def number_only(number)
 	number = number.gsub(/[^0-9X]/i, "")
-	array = number
 end	
+
+def string_split(number)
+	array = number.split(//,)	 
+	array = array.map(&:to_i) 
+end
